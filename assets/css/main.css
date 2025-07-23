@@ -184,6 +184,36 @@ h6 {
   color: #000 !important;
 }
 
+.lightbox {
+  position: relative;
+  display: block;
+  line-height: 0;
+}
+
+.lightbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 1.5em;
+  bottom: 1em;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-text {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  padding-right: 1.5em;
+}
 
 span.date:hover {
   color: inherit !important;
